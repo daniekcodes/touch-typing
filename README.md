@@ -1,5 +1,6 @@
-# touch-typing
+# TTP (Touch Typing Project)
 
-Small touch typing app
+TTP is a tool to practice touch typing. It is developed in JavaScript.
 
-Use clear to clear terminal first
+## How to use
+
