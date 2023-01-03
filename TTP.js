@@ -9,6 +9,11 @@ function practiceTouchTyping(length) {
     // Get input from user
     const userInput = readlineSync.question('Enter the string: ');
 
+    // Trim if the last character is a space
+    if (userInput[userInput.length - 1] === ' ') {
+        userInput = userInput.slice(0, -1);
+    }
+
     // Check if the input from user is correct
     if (userInput === correctString) {
         console.log('Correct!')
@@ -27,6 +32,7 @@ function generateRandomString(length) {
     return result;
 }
 
+// The string is set to 10 characters
+practiceTouchTyping(10);
 
-practiceTouchTyping(10);
-practiceTouchTyping(10);
+
