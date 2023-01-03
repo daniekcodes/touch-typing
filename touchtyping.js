@@ -6,10 +6,10 @@ function practiceTouchTyping(length) {
     const correctString = generateRandomString(length);
     console.log(`Type the following string: ${correctString}`);
 
-    // Get user's input
+    // Get input from user
     const userInput = readlineSync.question('Enter the string: ');
 
-    // Check if the user's input is correct
+    // Check if the input from user is correct
     if (userInput === correctString) {
         console.log('Correct!')
     } else {
@@ -19,7 +19,7 @@ function practiceTouchTyping(length) {
 
 function generateRandomString(length) {
     let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz;';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz; ';
     const charactersLength = characters.length;
     for (let i = 0; i < length; i++) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
@@ -28,4 +28,5 @@ function generateRandomString(length) {
 }
 
 
+practiceTouchTyping(10);
 practiceTouchTyping(10);
