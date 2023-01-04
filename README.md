@@ -1,5 +1,5 @@
 # TTP (Touch Typing Project)
-
+![touch typing JS](https://images.pexels.com/photos/33130/typewriter-keys-mechanically-letters.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 TTP is a tool to practice touch typing. It is developed in JavaScript.
 
 ## How to install
@@ -21,4 +21,3 @@ Type the following command to practice and test your touch typing skills:
 
 > node TTP.js
 
-![touch typing JS](https://images.pexels.com/photos/3808904/pexels-photo-3808904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
