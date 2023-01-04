@@ -4,19 +4,19 @@ const readlineSync = require('readline-sync');
 function practiceTouchTyping(length) {
     // Generate a random string to type
     const correctString = generateRandomString(length);
-    console.log(`Type the following string: ${correctString}`);
+    console.log(`Type the following characters: ${correctString}`);
 
     // Get input from user
-    const userInput = readlineSync.question('Enter the string: ');
+    let userInput = readlineSync.question('Enter the following characters: ');
 
     // Trim if the first or last character is a space
     userInput = userInput.trim();
 
     // Check if the input from user is correct
     if (userInput === correctString) {
-        console.log('Correct!')
+        console.log('Good job!')
     } else {
-        console.log(`Incorrect. The correct string was: ${correctString}`)
+        console.log(`That's incorrect. The correct phrase is: ${correctString}`)
     }
 }
 
