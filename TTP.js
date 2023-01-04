@@ -24,7 +24,7 @@ function practiceTouchTyping(length) {
 
 function generateRandomString(length) {
     let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz; ';
+    const characters = ' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz;';
     const charactersLength = characters.length;
     for (let i = 0; i < length; i++) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
@@ -34,5 +34,4 @@ function generateRandomString(length) {
 
 // The string is set to 10 characters
 practiceTouchTyping(10);
-
 
