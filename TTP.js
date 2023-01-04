@@ -9,10 +9,8 @@ function practiceTouchTyping(length) {
     // Get input from user
     const userInput = readlineSync.question('Enter the string: ');
 
-    // Trim if the last character is a space
-    if (userInput[userInput.length - 1] === ' ') {
-        userInput = userInput.slice(0, -1);
-    }
+    // Trim if the first or last character is a space
+    userInput = userInput.trim();
 
     // Check if the input from user is correct
     if (userInput === correctString) {
